@@ -1,6 +1,7 @@
 var express = require("express")
 var app = express();
 var router = express.Router();
+var AdminAuth = require ("../middleware/AdminAuth");
 
 var HomeController = require("../controllers/HomeController");
 var UserController = require("../controllers/UserController");
